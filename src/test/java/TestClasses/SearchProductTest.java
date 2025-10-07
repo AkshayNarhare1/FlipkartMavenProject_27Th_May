@@ -66,6 +66,13 @@ public class SearchProductTest extends Base1 {
         Assert.assertTrue(true);
     }
 
+    @Test(priority = 3)
+    public void verifyUserCanSearchProductWithRequiredInput() {
+        String searchData = getDataFromDataSheet("src/main/resources/DataSheet/flipkartdata.xlsx", "Sheet1", 0, 1);
+        Assert.assertTrue(hp.searchProduct(searchData), "Product not found");
+        Assert.assertTrue(true);
+    }
+
     @AfterMethod
     public void afterMethod() {
         System.out.println("After Method");
