@@ -65,6 +65,15 @@ public class LoginTest extends Base1 {
         softAssert.assertAll();
     }
 
+    @Test(priority = 3)
+    public void VerifyUserCanLoginWithCorrectCredentials1() {
+        hp.clickLoginButton();
+        lp.enterMobileNumber();
+        lp.clickOnRequestOTPButton();
+        softAssert.assertTrue(hp.checkUserLoggedIn());
+        softAssert.assertAll();
+    }
+
     @AfterMethod
     public void afterMethod() {
         System.out.println("After Method");
