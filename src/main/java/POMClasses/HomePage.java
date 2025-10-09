@@ -77,5 +77,11 @@ public class HomePage extends SeleniumUtils {
         }
     }
 
+    @Step
+    public void hoverOnProfileName1(){
+        Allure.step("Hover on profile name");
+        hoverOnElement(driver, driver.findElement(loggedInUserName));
+    }
+
 
 }
