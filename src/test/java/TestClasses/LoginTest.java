@@ -22,6 +22,8 @@ public class LoginTest extends Base1 {
     WebDriver driver;
     SoftAssert softAssert;
 
+    
+
     @BeforeClass
     @Parameters("browser")
     public void beforeClass(String browser) throws IOException {
