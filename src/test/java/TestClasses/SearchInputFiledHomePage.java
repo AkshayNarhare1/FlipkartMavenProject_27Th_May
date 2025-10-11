@@ -91,6 +91,9 @@ public class SearchInputFiledHomePage extends Base1 {
 
   @AfterClass
   public void afterClass() {
+	  
+	  System.out.println("After Class");
+      driver.quit();
   }
 
 }
