@@ -28,7 +28,7 @@ public class LoginTest extends Base1 {
     @Parameters("browser")
     public void beforeClass(String browser) throws IOException {
         loadConfigProperties();
-       // driver = launchBrowser(getPropertyValue("browser"));
+        driver = launchBrowser(getPropertyValue("browser"));
         driver = launchBrowser(browser);
         SeleniumUtils.setDriver(driver);
         driver.get(getPropertyValue("url"));
