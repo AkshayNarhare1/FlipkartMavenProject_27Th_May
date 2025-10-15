@@ -71,6 +71,13 @@ public class PaymentPageTest extends Base1 {
         System.out.println("testCase3 Pass");
     }
 
+    @Test
+    public void testCase4() {
+
+        Assert.assertTrue(true);
+        System.out.println("testCase4 Pass");
+    }
+
 
     @AfterMethod
     public void afterMethod() {
